@@ -17,6 +17,11 @@
 		/// The maximum zoom level up to which this layer will be displayed (inclusive).
 		/// </summary>
 		public float MaximumZoom { get; set; } = 18;
+		
+		/// <summary>
+		/// The maximum zoom number the tile source has available. If it is specified, the tiles on all zoom levels higher than maxNativeZoom will be loaded from maxZoom level and auto-scaled.
+		/// </summary>
+		public float MaxNativeZoom { get; set; } = 18;
 
 		/// <summary>
 		/// Subdomains of the tile service.
